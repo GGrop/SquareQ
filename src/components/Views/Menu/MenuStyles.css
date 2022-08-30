@@ -1,0 +1,122 @@
+.button {
+    border: 1px solid red;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+.buttonQ {
+    background-color: red;
+    border: none;
+    color: white;
+    height: 115px;
+    min-width: 110px;
+    font-size: 6rem;
+    font-weight: 800;
+    transition: 0.2s;
+    cursor: pointer;
+    user-select: none;
+}
+.buttonQ:active {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+.title{
+    display: flex;
+    justify-content: center;
+    height: 80%;
+}
+.skeleton{
+    height: 50px;
+    width: 40%;
+    border: 1px solid rgba(172, 147, 147, 0);
+    background-color: rgba(250, 9, 9, 0.75);
+    margin: 0px 185px;
+}
+.navMargin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navLink {
+    text-decoration: none; /*CLASE GENERAL */
+    width: 50%;
+    margin: 10px 5px;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .title{
+        margin-top: 80px;
+    }
+    h1{
+        font-size: 8rem;
+    }
+    .buttonQ {
+        font-size: 3rem;
+        height: 60px;
+        min-width: 60px;
+    }
+    .navLink{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 550px){
+    .title{
+        margin-top: 80px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .buttonQ {
+        font-size: 3rem;
+        height: 60px;
+        min-width: 50px;
+    }
+    .navLink{
+        width: 60%;
+    }
+}
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .title{
+        margin-top: 20px;
+    }
+    header{
+        margin:20px
+    }
+    /* .title{
+        margin-top: 80px;
+    } */
+    h1{
+        font-size: 6rem;
+    }
+    .buttonQ {
+        font-size: 3rem;
+        height: 60px;
+        width: 50px;
+    }
+    .button {
+        height: 40px;
+        font-size: 0.8rem;
+    }
+    .navMargin{
+        margin-top: 10px;
+    }
+    .navLink {
+        text-decoration: none;
+        width: 60%;
+        margin: 5px 5px;
+    }
+}

@@ -1,0 +1,38 @@
+.ReturnArrow{
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 20%;
+    width: 15px;
+    height: 30px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.ReturnArrow:hover{
+    transform: scale(1.2)
+}
+.ReturnArrow:active{
+    transform: scale(1.3)
+}
+
+@media screen and (max-width: 400px){
+    .ReturnArrow{
+        top: 30px;
+        left: 20%;
+    }
+}
+@media screen and (max-height: 852px){
+    .ReturnArrow{
+        top:50px;
+    }
+}
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .ReturnArrow{
+        top: 30px;
+        left: 20%;
+        width: 10px;
+        height: 20px;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+}

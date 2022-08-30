@@ -1,0 +1,36 @@
+.alert {
+    position: absolute;
+    margin:auto;
+    width: 60%;
+    height: 60%;
+    z-index: 4;
+}
+.swal2-popup{
+    background-color: rgba(0, 0, 0, 0.94);
+    border: 1px solid red;
+    border-radius: 0px;
+    color: white;
+}
+.swal2-styled.swal2-confirm {
+    border: 1px solid red;
+    border-radius: 0px;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.904);
+    height: 50px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.swal2-styled.swal2-confirm:hover {
+    background-color: red;
+    color: white;
+    transform: scale(1.1);
+}
+.swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
+    background-color: red;
+}
+.swal2-icon.swal2-error {
+    border-color: red;
+}

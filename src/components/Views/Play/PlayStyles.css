@@ -1,0 +1,80 @@
+.hud {
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    align-items: flex-end
+  }
+.hud>label{
+
+}
+.hud>div{
+
+}
+@media screen and (max-width: 670px){
+    .hud{
+        width: 70%;
+        margin-top: 120px;
+    }
+    .hud>label{
+        font-size: 2rem;
+    }
+    .SqContainer {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin: 100px;
+    }
+    .square {
+        margin: 8px;
+        width:33%;
+        height: 120px;
+    }
+    .square9 {
+        margin: 8px;
+        width:28%;
+        height:100px;
+    }
+    .square16{
+        margin: 8px;
+        width:20%;
+        height: 70px;
+    }
+}
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .hud{
+        width: 60%;
+        margin-top: 100px;
+        position: fixed;
+        top: -80px;
+    }
+    .hud>label{
+        font-size: 1rem;
+    }
+    .hud>div>label{
+        font-size: 1rem;
+    }
+    .SqContainer {
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .square {
+        margin: 8px;
+        width:33%;
+        height: 100px;
+    }
+    .square9 {
+        margin: 5px;
+        width:22%;
+        height:60px;
+    }
+    .square16{
+        margin: 4px;
+        width:20%;
+        height: 60px;
+    }
+}

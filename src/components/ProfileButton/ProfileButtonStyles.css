@@ -1,0 +1,46 @@
+.userIcon{
+    color: red;
+    size: 990px;
+    z-index: 1090;
+    top: 100px;
+    right: 400px;
+    height: 40px;
+    width: 50px;
+    cursor: pointer;
+}
+.userBox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10%;
+    right: 20%;
+}
+@media screen and (max-width: 400px){
+    .userBox{
+        top:30px;
+        right: 10%;
+    }
+    .userIcon{
+        width: 25px;
+        cursor: pointer;
+    }
+    .usertext{
+        font-size: 0.5rem;
+    }
+}
+/* @media screen and (max-height: 852px){
+    .userBox{
+        top:50px;
+        right: 10%;
+    }
+} */
+
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .userIcon{
+        width: 25px;
+        cursor: pointer;
+    }
+    .usertext{
+        font-size: 0.5rem;
+    }
+}

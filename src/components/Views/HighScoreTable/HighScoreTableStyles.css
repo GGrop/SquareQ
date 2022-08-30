@@ -1,0 +1,155 @@
+.tableBoxing {
+    z-index: 1001;
+    width: 70%;
+    height: 80%;
+    user-select: none;
+}
+.tableBoxing > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tableBoxing > div> h2{
+    font-size: 4rem;
+    margin-bottom: 40px;
+}
+.tableBoxing > div> div{
+    width: 100%;
+}
+
+table {
+    display: grid;
+    border-collapse: collapse;
+    margin:auto;
+    min-width: 40%;
+    max-width: 600px;
+    height: 800px;
+    overflow-y: scroll;
+    grid-template-columns: 0.4fr 1fr 1fr;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+thead,tbody,tr {
+    height: 1px;
+    padding: 2px;
+    display: contents;
+}
+th,td {
+    font-family: 'Roboto', sans-serif;
+    user-select: none;
+    min-height: 50px;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+th {
+    position: sticky;
+    top: 0;
+    text-align: left;
+    font-weight: normal;
+    font-size: 3rem;
+    color: red;
+    background-color: rgba(0, 0, 0, 0.904);
+}
+
+th:last-child {
+    border: 0;
+}
+
+td {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: red;
+}
+
+#table::-webkit-scrollbar-thumb {
+    background-color: red;
+}
+
+
+@media screen and (max-width: 550px){
+    th {
+        font-size: 2rem;
+    }
+    td {
+        font-size: 1.2rem;
+    }
+    .tableBoxing > div> h2{
+        font-size: 2rem;
+        margin-bottom: 40px;
+        margin-top: 40px;
+        
+    }
+    table{
+        grid-template-columns: 0.6fr 2fr 2fr;
+        min-width: 100%;
+        height: 400px;
+    }
+    th,td {
+        min-height: 30px;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .tableBoxing > div> h2 {
+        font-size: 2rem;
+    }
+    table{
+        height: 10px;
+        min-width: 80%;
+    }
+    th {
+        font-size: 1.5rem;
+    }
+    td {
+        font-size: 1.2rem;
+        min-height: 30px;
+        padding: 1px 0px;
+    }
+}
+@media screen and (max-height: 650px){
+    table{
+        height: 300px;
+    }
+}
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .tableBoxing > div> h2 {
+        font-size: 2rem;
+    }
+    table{
+        height: 200px;
+        width: 60%;
+    }
+    th {
+        font-size: 1.5rem;
+    }
+    td {
+        font-size: 1rem;
+        min-height: 30px;
+        padding: 1px 0px;
+    }
+}
+
+@media screen and (orientation:landscape) and (max-height: 600px) {
+    .tableBoxing > div> h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    table{
+        height: 200px;
+    }
+    th {
+        font-size: 1.5rem;
+    }
+    td {
+        font-size: 1rem;
+        min-height: 30px;
+        padding: 1px 0px;
+    }
+}
+
+
+
+
