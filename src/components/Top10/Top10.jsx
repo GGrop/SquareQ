@@ -1,13 +1,12 @@
 import React from 'react'
-import './Top10Styles.css'
-function Top10(cuentas) {
 
+function Top10(cuentas) {
         return (
-            <tr>
-                <td>{cuentas.index+1}</td>
-                <td>{cuentas.userName}</td>
-                <td>{cuentas.highScore}</td>
-            </tr>
+            <>
+                <h5>{cuentas.index+1}</h5>
+                <h5>{cuentas.userName}</h5>
+                <h5>{cuentas.highscore}</h5>
+            </>
     )
 }
 

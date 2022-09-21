@@ -1,12 +1,14 @@
 import React from 'react'
+import { useAuth } from '../../../../context/authContext'
 
-function Play() {
+function PlayButton() {
 
+  const {reset}=useAuth()
   return (
     <>
-      <button className='button'>Play</button>
+      <button className='button' onClick={reset}>Play</button>
     </>
   )
 }
 
-export default Play
+export default PlayButton

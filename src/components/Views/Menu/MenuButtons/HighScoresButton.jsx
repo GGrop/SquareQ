@@ -1,6 +1,6 @@
 import React from 'react'
 
-const HighScores = () => {
+const HighScoresButton = () => {
   return (
     <>
       <button  className='button'>Highscore</button>
@@ -8,4 +8,4 @@ const HighScores = () => {
   )
 }
 
-export default HighScores
+export default HighScoresButton

@@ -1,7 +1,10 @@
 .auth{
     display: flex;
     align-items: center;
-    margin-bottom: 200px;
+}
+.radioContainer{
+    display: flex;
+    margin: 20px;
 }
 .auth > div{
     display: flex;
@@ -60,6 +63,12 @@
     align-items: center;
     margin: 2px 30px;
     font-size: 1rem;
+}
+.content-logreg{
+    position: fixed;
+    top:25%;
+    margin: auto;
+    width: 60%
 }
 
 input[type=radio] {
@@ -124,10 +133,6 @@ input[type=radio]:checked {
     transition: transform 200ms ease-in-out;
 }
 .logRegContainButton:hover:after { transform: scaleX(1); }
-
-
-
-
 
 @media screen and (min-width: 600px){
     .auth > div > div{

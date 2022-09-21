@@ -1,42 +1,39 @@
 import React, { useState, useEffect } from 'react';
+import { useAuth } from '../../context/authContext';
+import './TimerStyles.css'
+const Timer = () => {
+    const [isActive, setIsActive] = useState(true);
+    const {youLose,countdown,timer,lose,youWin,win}=useAuth()
 
-const Timer = (props) => {
-    const{setLoss,seconds,setSeconds,setIsActive,isActive,reset}=props
-
-    // const [seconds, setSeconds] = useState(15);
-    // const [isActive, setIsActive] = useState(true);
-
-    // function toggle() {
-        // setIsActive(!isActive); 
-    // }
-
-    // function reset() {
-    //     setSeconds(15);
-    //     setIsActive(false);
-    // }
 
     useEffect(() => {
         let interval = null;
-        if (isActive) {
-            interval = setInterval(() => {
-                if(seconds>0){
-                    setSeconds(seconds =>seconds+1)
-                }else{
-                    setLoss(1)
+        if(win !==1){
+            if(lose !== 1){
+                if (isActive) {
+                    interval = setInterval(() => {
+                        if(timer>0){
+                            countdown()
+                        }else{
+                            youLose()
+                        }
+                    }, [1000]);
+                } else if (!isActive && timer !== 0) {
+                    clearInterval(interval);
                 }
-            }, 1000);
-        } else if (!isActive && seconds !== 0) {
-            clearInterval(interval);
+            }
+        }else{
+            youWin()
         }
-        return () => clearInterval(interval);
-    }, [isActive, seconds]);
+            return () => clearInterval(interval);
+    }, [isActive, timer]);
 
     return (
-    <div className="time">
-        <label className="">
-            {seconds}s
-        </label>
-    </div>
+        <div className="time">
+            <label className="">
+                {timer}s
+            </label>
+        </div>
     );
 };
 

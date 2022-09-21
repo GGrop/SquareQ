@@ -1,54 +1,52 @@
-import React, { useEffect, useState } from 'react'
-import {NavLink} from 'react-router-dom'
-import 'react-loading-skeleton/dist/skeleton.css'
-import Skeleton from 'react-loading-skeleton'
-
-
 import PlayButton from './MenuButtons/PlayButton'
 import LogRegButton from './MenuButtons/LogRegButton'
 import HighScoresButton from './MenuButtons/HighScoresButton'
 import LogoutButton from './MenuButtons/LogoutButton'
-import Title from '../Title'
+import Title from './Title'
+import ProfileButton from '../../ProfileButton/ProfileButton'
 
-import './MenuStyles.css'
+import React from 'react'
+import {NavLink} from 'react-router-dom'
 import { useAuth } from '../../../context/authContext'
-import {onAuthStateChanged} from "firebase/auth";
+import './MenuStyles.css'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Menu = () => {
 
-  const {user,upToFirebase,CambioSession}=useAuth()
-
-  const [first, setfirst] = useState(null)
-  // console.log(user.email)
-
-  
-  useEffect(()=>{
-    CambioSession();
-    async function fetchTareas(){
-      const tareas= await upToFirebase(user.uid)
-      setfirst(tareas)
-    }
-  },[])
+  const {user}=useAuth()
+  console.log(user)
   
   return (
-    <header>
-        <Title/>
-        <nav className='navMargin animacion2'>
-          <NavLink className="navLink"  to='/Play' >
-            <PlayButton/> 
-          </NavLink>
-          <NavLink className="navLink"  to='/Menu' >
-              <LogoutButton/>
-          </NavLink>
-                <NavLink className="navLink"  to='/LogRegScreen'>
+    <div className="content">
+    <ProfileButton/>
+      <header>
+          <Title/>
+          <nav className='navMargin animacion2'>
+            {user?
+              <>
+                <NavLink className="navLink"  to='/Play' >
+                  <PlayButton/>
+                </NavLink>
+                <NavLink className="navLink"  to='/LogRegScreen' >
+                  <LogoutButton/>
+              </NavLink>
+              </>
+            :
+              <>
+              <NavLink className="navLink"  to='/LogRegScreen' >
+                <PlayButton/>
+              </NavLink>
+                <NavLink className="navLink"  to='/LogRegScreen' >
                   <LogRegButton/>
                 </NavLink>
-          <NavLink className="navLink"  to='/HighScores'>
-            <HighScoresButton/>
-          </NavLink>
-        </nav>
-    </header>
+              </>
+            }
+            <NavLink className="navLink"  to='/HighScores'>
+              <HighScoresButton/>
+            </NavLink>
+          </nav>
+      </header>
+    </div>
   )
 }
-
 export default Menu

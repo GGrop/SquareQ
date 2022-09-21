@@ -1,0 +1,47 @@
+
+.square {
+    margin: 8px;
+    width:280px;
+    height: 280px;
+}
+.square9 {
+    margin: 8px;
+    width:180px;
+    height:180px;
+}
+.square16{
+    margin: 8px;
+    width:130px;
+    height:130px;
+}
+
+.square:hover,
+.square9:hover,
+.square16:hover
+{
+    transform: scale(1.02);
+}
+
+.square:active,
+.square9:active,
+.square16:active{
+    transform: scale(1.03);
+}
+
+@media screen and (max-width: 650px){
+    .square {
+        margin: 8px;
+        width:140px;
+        height: 140px;
+    }
+    .square9 {
+        margin: 5px;
+        width:90px;
+        height:90px;
+    }
+    .square16{
+        margin: 4px;
+        width:60px;
+        height:60px;
+    }
+}

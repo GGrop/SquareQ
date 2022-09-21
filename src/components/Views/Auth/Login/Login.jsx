@@ -2,12 +2,14 @@ import React from 'react'
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import {useNavigate} from  'react-router-dom'
-import '../Auth.css'
 import { useAuth } from '../../../../context/authContext';
-import { swal } from '../../../swal/swal';
+import { SwalErrors } from '../../../SwalErrors/SwalErrors';
+import '../Auth.css'
 
 function Login() {
+
     const {login}=useAuth()
+
     const navigate = useNavigate()
     const validationMessages = {
         email: {
@@ -37,9 +39,8 @@ function Login() {
                 navigate("/")
             }
             catch(error){
-                swal("errorLogin")
+                SwalErrors("errorLogin")
             }
-            
         }}
         validationSchema={SignupSchema}
     >
@@ -65,25 +66,6 @@ function Login() {
                 <button type="submit">Submit</button>
         </Form>
     </Formik>
-        // <form className='auth animacion1' action="/login" method="POST">
-        //     <div>
-        //         <div>
-        //             <label>Username:</label>
-        //             <input
-        //                 type="text"
-        //                 name="username"
-        //             />
-        //         </div>
-        //         <div>
-        //             <label>Password:</label>
-        //             <input
-        //                 type="password"
-        //                 name="password"
-        //             />
-        //         </div>
-        //     </div>
-        //         <button type="submit">LOG IN</button>
-        // </form>
     )
 }
 

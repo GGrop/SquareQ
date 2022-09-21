@@ -1,24 +1,28 @@
-import React, { useState, useContext } from 'react'
 import {BiUser} from 'react-icons/bi'
 import { NavLink } from 'react-router-dom'
+import { useAuth } from '../../context/authContext'
+import React from 'react'
 import './ProfileButtonStyles.css'
-function User() {
-    const [user, setUser] = useState(1)
-    //si user esta en 0, no esta logueado, no tiene q cargar el nombre
+
+function ProfileButton() {
+
+    const {user}=useAuth()
     return (
-        <NavLink className="userBox"  to='/LogRegScreen' >
-        {user ?
-            <>
+        <>
+            {user ?
+                <div className='userBox'>
+                    < BiUser className='userIcon'/>
+                    <p className='usertext'>{user.username}</p>
+                </div>
+                :
+                <NavLink className="navLink"  to='/LogRegScreen' >
+                    <div className='userBox'>
                         < BiUser className='userIcon'/>
-                        <p className='usertext'>giuli</p>
-            </>
-            :
-            <>
-                < BiUser className='userIcon'/>
-            </>
-        }
-        </NavLink>
+                        <p className='usertext'>user</p>
+                    </div>
+                </NavLink>
+            }
+        </>
     )
 }
-
-export default User
+export default ProfileButton

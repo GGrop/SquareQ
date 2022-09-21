@@ -11,7 +11,8 @@
     border-radius: 0px;
     color: white;
 }
-.swal2-styled.swal2-confirm {
+.swal2-styled.swal2-confirm,
+.swal2-styled.swal2-deny{
     border: 1px solid red;
     border-radius: 0px;
     color: red;
@@ -23,7 +24,8 @@
     transition: 0.2s;
     cursor: pointer;
 }
-.swal2-styled.swal2-confirm:hover {
+.swal2-styled.swal2-confirm:hover,
+.swal2-styled.swal2-deny:hover {
     background-color: red;
     color: white;
     transform: scale(1.1);
@@ -33,4 +35,11 @@
 }
 .swal2-icon.swal2-error {
     border-color: red;
+}
+
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+    background-color: #5eff00;
+}
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: .25em solid #5eff00;
 }

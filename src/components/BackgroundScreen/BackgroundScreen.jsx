@@ -2,6 +2,7 @@ import React from 'react'
 import video from '../../assets/video.mp4'
 import './BackgroundScreenStyles.css'
 
+
 function Video() {
   return (
     <div>
@@ -10,5 +11,4 @@ function Video() {
     </div>
   )
 }
-
 export default Video

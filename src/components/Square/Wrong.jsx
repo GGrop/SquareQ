@@ -1,11 +1,10 @@
 import React from 'react'
+import { useAuth } from '../../context/authContext'
 
-function Wrong(props) {
-    const{setLoss,setIndex}=props
+function Wrong() {
 
-    const youLose=()=>{
-        setLoss(1)
-    }
+    const {youLose}=useAuth()
+
     return (
         <button className='buttonWrong' onClick={youLose}></button>
     )
