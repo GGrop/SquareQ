@@ -18,7 +18,10 @@ export const SwalErrors = (prop) => {
             text:"Por favor ingrese bien su credencial",
             confirmButtonText: "Aceptar",
             width:"40%",
-            timer:8000,
-        }))
+            className: "swal-back",
+            timer:800000,
+            customClass: "swal-baaaaa6ck"
+        }
+        ))
     }
 }

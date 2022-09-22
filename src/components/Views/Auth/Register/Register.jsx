@@ -120,7 +120,7 @@ function Register() {
                         </div>
                         <ErrorMessage  name="gender">{msg => <div className='error'>{msg}</div>}</ErrorMessage>
                     </div>
-                        <button type="submit">Submit</button>
+                        <button type="submit">Register</button>
                 </Form>
             </Formik>
         </>

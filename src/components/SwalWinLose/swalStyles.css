@@ -11,6 +11,13 @@
     border-radius: 0px;
     color: white;
 }
+.swal-baaaaa6ck{
+    background-color: rgba(115, 206, 31, 0.94);
+    border: 1px solid red;
+    border-radius: 0px;
+    color: white;
+}
+
 .swal2-styled.swal2-confirm,
 .swal2-styled.swal2-deny{
     border: 1px solid red;

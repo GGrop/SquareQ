@@ -82,7 +82,7 @@ input[type=radio]:checked {
     background-size: 9px 9px;
 }
 .error{
-    color: red;
+    color: rgb(255, 0, 234);
     font-family: 'Roboto', sans-serif;
     user-select: none;
     font-size: 1rem;

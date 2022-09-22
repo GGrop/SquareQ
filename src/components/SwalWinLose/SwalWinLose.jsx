@@ -32,6 +32,7 @@ export const SwalWinLose = (prop) => {
             showDenyButton: true,
             denyButtonText:"Menu",
             width:"40%",
+            customClass: "swal-baaaaa6ck"
         })
         .then((result)=>{
             if (result.isConfirmed) {
