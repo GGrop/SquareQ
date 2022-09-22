@@ -39,7 +39,7 @@ function Register() {
         .required(validationMessages.email.required),
         password:Yup.string()
         .matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])/,validationMessages.password.format)
-        .min(5,validationMessages.password.fieldLength)
+        .min(6,validationMessages.password.fieldLength)
         .max(16,validationMessages.password.fieldLength)
         .required(validationMessages.password.required),
         gender:Yup.string()
