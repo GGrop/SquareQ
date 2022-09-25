@@ -15,16 +15,16 @@
 
 .swal2-styled.swal2-confirm,
 .swal2-styled.swal2-deny{
-    border: 1px solid red;
-    border-radius: 0px;
-    color: red;
-    background-color: rgba(0, 0, 0, 0.904);
-    height: 50px;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 400;
-    transition: 0.2s;
-    cursor: pointer;
+    border: 1px solid red!important;
+    border-radius: 0px!important;
+    color: red!important;
+    background-color: rgba(0, 0, 0, 0.904)!important;
+    height: 50px!important;
+    width: 100%!important;
+    font-size: 1rem!important;
+    font-weight: 400!important;
+    transition: 0.2s!important;
+    cursor: pointer!important;
 }
 .swal2-styled.swal2-confirm:hover,
 .swal2-styled.swal2-deny:hover {
@@ -33,15 +33,15 @@
     transform: scale(1.1);
 }
 .swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
-    background-color: red;
+    background-color: red!important;
 }
 .swal2-icon.swal2-error {
-    border-color: red;
+    border-color: red!important;
 }
 
 .swal2-icon.swal2-success [class^="swal2-success-line"] {
-    background-color: #5eff00;
+    background-color: #5eff00!important;
 }
 .swal2-icon.swal2-success .swal2-success-ring {
-    border: .25em solid #5eff00;
+    border: .25em solid #5eff00!important;
 }
