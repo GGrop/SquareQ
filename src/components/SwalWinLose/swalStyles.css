@@ -1,9 +1,9 @@
 .alert {
-    position: absolute;
-    margin:auto;
-    width: 60%;
-    height: 60%;
-    z-index: 4;
+    position: absolute!important;
+    margin:auto!important;
+    width: 60%!important;
+    height: 60%!important;
+    z-index: 4!important;
 }
 
 .swal2-popup2{
@@ -28,9 +28,9 @@
 }
 .swal2-styled.swal2-confirm:hover,
 .swal2-styled.swal2-deny:hover {
-    background-color: red;
-    color: white;
-    transform: scale(1.1);
+    background-color: red!important;
+    color: white!important;
+    transform: scale(1.1)!important;
 }
 .swal2-icon.swal2-error [class^="swal2-x-mark-line"] {
     background-color: red!important;
