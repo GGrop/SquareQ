@@ -5,17 +5,12 @@
     height: 60%;
     z-index: 4;
 }
-.swal2-popup{
-    background-color: rgba(0, 0, 0, 0.94);
-    border: 1px solid red;
-    border-radius: 0px;
-    color: white;
-}
-.swal-baaaaa6ck{
-    background-color: rgba(115, 206, 31, 0.94)!important;
-    border: 1px solid red;
-    border-radius: 0px;
-    color: white;
+
+.swal2-popup2{
+    background-color: rgba(0, 0, 0, 0.94)!important;
+    border: 1px solid red!important;
+    border-radius: 0px!important;
+    color: white!important;
 }
 
 .swal2-styled.swal2-confirm,

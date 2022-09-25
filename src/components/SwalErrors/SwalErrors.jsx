@@ -19,8 +19,8 @@ export const SwalErrors = (prop) => {
             confirmButtonText: "Aceptar",
             width:"40%",
             className: "swal-back",
-            timer:800000,
-            customClass: "swal-baaaaa6ck"
+            timer:8000,
+            customClass: "swal2-popup2"
         }
         ))
     }
