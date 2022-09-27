@@ -14,7 +14,6 @@ import 'react-loading-skeleton/dist/skeleton.css'
 const Menu = () => {
 
   const {user}=useAuth()
-  console.log(user)
   
   return (
     <div className="content">

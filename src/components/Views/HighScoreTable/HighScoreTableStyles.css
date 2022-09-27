@@ -10,18 +10,6 @@
     font-size: 4rem;
     margin-bottom: 40px;
 }
-
-/* table {
-    display: grid;
-    border-collapse: collapse;
-    margin:auto;
-    min-width: 50%;
-    max-width: 800px;
-    height: 600px;
-    overflow-y: scroll;
-    grid-template-columns: 0.4fr 1fr 1fr;
-    background-color: rgba(0, 0, 0, 0.904);
-} */
 #table {
     display: grid;
     margin:auto;
@@ -63,9 +51,9 @@ thead,tbody,tr {
 .tbody>h5 {
     min-height: 40px;
     width: 100%;
-    margin: 7px 0px;
+    margin: 7px 10px;
     color: red;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     font-family: 'Roboto', sans-serif
 }
@@ -126,68 +114,20 @@ thead,tbody,tr {
         min-width: 100%;
         height: 400px;
     }
-    th,td {
-        min-height: 30px;
+}
+
+@media screen and (orientation:landscape) and (max-height: 700px) {
+    .tableBoxing > div> h2 {
+        font-size: 2rem;
+    }
+    #table {
+        height: 400px;
+    }
+    .thead>h3 {
+        font-size: 2rem;
     }
 }
 
-@media screen and (orientation:landscape) and (max-height: 600px) {
-    .tableBoxing > div> h2 {
-        font-size: 2rem;
-    }
-    table{
-        height: 10px;
-        min-width: 80%;
-    }
-    th {
-        font-size: 1.5rem;
-    }
-    td {
-        font-size: 1.2rem;
-        min-height: 30px;
-        padding: 1px 0px;
-    }
-}
-@media screen and (max-height: 650px){
-    table{
-        height: 300px;
-    }
-}
-@media screen and (orientation:landscape) and (max-height: 600px) {
-    .tableBoxing > div> h2 {
-        font-size: 2rem;
-    }
-    table{
-        height: 200px;
-        width: 60%;
-    }
-    th {
-        font-size: 1.5rem;
-    }
-    td {
-        font-size: 1rem;
-        min-height: 30px;
-        padding: 1px 0px;
-    }
-}
-
-@media screen and (orientation:landscape) and (max-height: 600px) {
-    .tableBoxing > div> h2 {
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    table{
-        height: 200px;
-    }
-    th {
-        font-size: 1.5rem;
-    }
-    td {
-        font-size: 1rem;
-        min-height: 30px;
-        padding: 1px 0px;
-    }
-}
 
 
 

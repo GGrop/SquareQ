@@ -69,8 +69,6 @@ export const AuthProvider=({children})=>{
         highscore()
     }
     const highscore=()=>{
-        console.log(user.highscore,"soy highscore")
-        console.log(level,"soy level")
         if(level>user.highscore){
             const docRef=doc(db,`users/${user.uid}`)
             updateDoc(docRef,{highscore:level})
