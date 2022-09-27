@@ -1,6 +1,6 @@
 # Square Q 🟥
 
- #### Click here to play [🕹️Demo](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ #### Click here to play [🕹️Demo](https://square-q.vercel.app/Menu)
 
 ## Install
 
