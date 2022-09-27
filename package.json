@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "firebase": "^9.8.4",
     "formik": "^2.2.9",
+    "gh-pages": "^4.0.0",
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16",
     "react": "^18.2.0",

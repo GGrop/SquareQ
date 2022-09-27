@@ -39,6 +39,8 @@ thead,tbody,tr {
 }
 
 .thead>h3 {
+
+    display:block;
     top: 0;
     position: sticky;
     text-align: left;
@@ -49,6 +51,7 @@ thead,tbody,tr {
 }
 
 .tbody>h5 {
+    max-width: 100px;
     min-height: 40px;
     width: 100%;
     margin: 7px 10px;
