@@ -1,5 +1,7 @@
 # Square Q 🟥
 
+Square it's a simple React Game, i tried to learn more about React at the same time that I played and this minigame is the result.
+
  #### Click here to play [🕹️Demo](https://square-q.vercel.app/Menu)
 
 ## Install
